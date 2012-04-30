@@ -1,0 +1,9 @@
+﻿body {
+		background-color: tan;
+		width: 800px;
+		margin: auto;
+}
+
+h1, h2 { 
+		border-bottom: thin dotted #888888;
+}

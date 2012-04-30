@@ -1,0 +1,29 @@
+﻿h1 {
+		text-align: center;
+}
+
+body {
+		width: 800px;
+		background-color: tan;
+		margin: auto;
+}
+
+p {
+		text-align: left;
+}
+
+h2 {
+		border-bottom-style: solid;
+}
+
+table {
+		margin: auto;
+		text-align: center;
+		border: thin solid black;
+		border-collapse: collapse;
+}
+
+#head {
+		font-size: large;
+		font-style: oblique;
+}
