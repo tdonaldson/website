@@ -1,239 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
+<title>Tyler's HTML Attempts</title>
+<link type="text/css" rel="stylesheet" href="index.css" />
+<img class="sky" src="Images/nightsky.jpg">
+<div class="navigation">
+	<ul>
+	<li><a href="Myworkpage.html">HTML Work</a></li><br />
+	<li><a href="Blogs/Blog.html">Blogging</a></li><br />
+	<li><a href="DailyJournal/journal.html">My Daily Life</a></li><br />
+	<li><a href="Videos">Favorite Videos</a></li><br />
+	<li><a href="Quotation/Quotes.html">Favorite Quotations</a></li><br />
+	<li><a href="School/CollegePapers.html">My Collegiate Papers</a></li><br />
+	</ul>
+</div>
+<body>
+<div id="welcome">
+<h2>Welcome</h2>
+<p>Welcome to my brand new, very first website! I'm not doing any type of sales or advertising on this page. I'm currently 
+just using this website to become better at writing HTMLs. This will also help me prepare for classes that I will be taking 
+during my college years. </p>
+<p>As my days in learning and being more fluent in HTML, XHTML, and CSS grow, I plan on changing this mediocre website into
+a site for a business. That business will be to advertise to others my ability to create web pages for their new, or old, 
+businesses that they are wishing to advertise. That is not really in my new future; probably a year or two from now. That is,
+unless I hone my abilities and am able to write web pages in my sleep.</p>
+</div>
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<div id="bio">
+<h2>Biography</h2>
+<p> My name is Tyler. I just turned 18 years old. I am a freshman at Francis Marion University in Marion, South Carolina. 
+My major is a part of the business degree there at FMU; it is Management Information Systems(MIS). Management Information 
+Systems is a subset of the overall internet controls of a business covering the application of people, documents, 
+technologies, and procedures by management accountants to solve business problems such as costing a product, service or a 
+business-wide strategy. <br /></p>
+<p>I also play the piano; going on ten years now. I play all sorts of music. My least favorite to play is classical, not
+sure why this is because I absolutely loving listening to the CDs that I own. I don't really like playing as an accompaniest.
+I'd much rather be a solo pianist.</p>
+<p>I am also working at the local Cici's Pizza. I have experience in every position within the restaurant. I will soon begin 
+training to be a shift supervisor. This means that I will be able to run the restuarant as a manager and will have almost 
+the same priviliges as a certified manager has. 
+</p></div>
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+<div id="update">
+<h2>Updates on the Site</h2>
+<p>Here I am progressing with the development of my web page. Listed here
+will be the latest updates onto my page.</p>
 
+<ul><li>Implemented a navigation bar for the daily journal.</li></ul>
+<ul><li>Update for <em>November 9, 2010</em> in my journal.</li></ul>
+<ul><li>Update for <em>November 8, 2010</em> in my journal.</li></ul>
+<ul><li>Introduced a page for my <a href="DailyJournal/journal.html">Daily 
+Life.</a> <em>Updated on November 7, 2010.</em></li></ul>
+</div>
 
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("images/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://stdlib.rubyonrails.org/">Ruby standard library</a></li>
-              <li><a href="http://corelib.rubyonrails.org/">Ruby core</a></li>
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove or rename this file</h2>
-              <p>Routes are set up in config/routes.rb.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:migrate</code> to create your database. If you're not using SQLite (the default), edit <code>config/database.yml</code> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+<div id="soon">
+<h1>COMING SOON!</h1>
+<p>There are several things that I plan on implementing into this site. These 
+new attributes include:</p>
+<ul>
+<li>A page full of videos that is full of my favorite videos.</li>
+<li>I will also be creating an index on my favorite video pages to make it easily
+to find the videos.</li>
+<li>I am also going to implement, or try to implement, a search bar to find
+the videos on the page.</li>
+</ul>
+</div>
+</body>
 </html>
