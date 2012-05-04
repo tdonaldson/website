@@ -56,9 +56,12 @@ body {
 		text-align: left;
 		border-style: groove;
 		border-width: 7px;
-		margin-top: 75px;
+		margin-top: 50px;
 }
 
 #soon {
-		text-align: left;		
+		text-align: left;	
+		border-style: groove;
+		border-width: 7px;
+		margin-top: 35px;	
 }
